@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Videography Business</title>
+  <style>
+    /* Inline CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #00A9FF
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      margin-top: 40px;
+    }
+
+    .hero-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .hero-description {
+      font-size: 18px;
+      color: #666;
+    }
+
+       .form-input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .form-submit {
+      display: block;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-submit:hover {
+      background-color: #333;
+    }
+
+    a {
+      display: block;
+      margin-top: 10px;
+      color: #00A9FF;
+      text-decoration: none;
+    }
+
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    // JavaScript
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields');
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Videography Business</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#book">Book</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to our Videography Business</h2>
+    <img class="hero-image" src="hero-image.jpg" alt="Hero Image">
+    <div class="hero-content">
+      <h3 class="hero-title">Capturing Moments, Creating Memories</h3>
+      <p class="hero-description">We specialize in capturing the essence of your special moments through our professional videography services. From weddings to corporate events, we are dedicated to delivering high-quality videos that you can cherish for a lifetime.</p>
+      <a class="cta-button" href="#services">View Our Services</a>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of videography services to meet your needs:</p>
+    <ul>
+      <li>Wedding Videography</li>
+      <li>Event Videography</li>
+      <li>Corporate Videography</li>
+      <li>Drone Videography</li>
+    </ul>
+
+    <a href="#home">Back to Home</a>
+  </section>
+
+  <section id="book">
+    <h2>Book a Videography Service</h2>
+    <form onsubmit="return validateForm()">
+      <input class="form-input" type="text" id="name" placeholder="Your Name" required>
+      <input class="form-input" type="email" id="email" placeholder="Your Email" required>
+     <input class="form-input" type="date" id="date" required min="2000-01-01" max="2023-12-31">
+
+      <textarea class="form-input" id="message" placeholder="Message" required></textarea>
+      <input class="form-submit" type="submit" value="Submit">
+    </form>
+    <a href="#home">Back to Home</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p># About Us
+
+## Who We Are
+**VisionFrame Videography** is a Nairobi-based professional videography company dedicated to capturing your most precious moments in high-definition clarity. We specialize in a wide range of videography services, from weddings and corporate events to documentaries and music videos.
+
+## Our Mission
+Our mission is to tell your unique story through the power of video. We believe that every moment is worth capturing, and we strive to encapsulate the emotion and excitement of these moments in each frame.
+
+## Our Team
+Our team is composed of talented and passionate videographers who are experts in their field. They are committed to delivering high-quality content that exceeds your expectations.
+
+## Our Experience
+With over a decade of experience in the industry, we have had the privilege of working with a diverse range of clients, each with their unique stories. Our portfolio showcases our versatility and commitment to delivering exceptional results.
+
+## Why Choose Us?
+At VisionFrame Videography, we prioritize our clients' needs and work closely with them to bring their vision to life. We use state-of-the-art equipment and innovative techniques to ensure that our videos are not just recordings, but works of art that you will treasure for a lifetime.
+
+We look forward to telling your story.
+
+Contact us today to book your session.
+</p>
+    <p>Contact us today to learn more about our services!</p>
+    <a href="#home">Back to Home</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us:</p>
+    <ul>
+      <li>Email: info@videographybusiness.com</li>
+      <li>Phone: 0792010</li>
+      <li>Address: Nairobi Kenya</li>
+    </ul>
+    <a href="#home">Back to Home</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Videography Business. All rights reserved.</p>
+  </footer>
+</body>
+</html>
